@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height:100vh;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    padding-top: 2%;
+    color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    padding-top: 5%;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: bold;
+
+}
+
+.content p{
+    font-size: 25px;
+    margin-bottom: 4%;
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content button{
+    font-size: 15px;
+    padding: 2%;
+    margin: 2%;
+    background-color: blue;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10%;
+}
+.c{
+    color: rgb(47, 0, 255);
+}
+.time{
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.time div{
+    margin-top: 10%;
+    flex-basis: 100px;
+}
+
+.time div p{
+    font-size: 40px;
+}
+
+.rocket{
+    width: 18%;
+    position: absolute;
+    right: 30%;
+    bottom: 40%;
+    animation: rocket 4s linear infinite;
+}
+#day,#hr,#min,#sec{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100%{
+        bottom: 20%;
+        opacity: 1;
+    }
+}
